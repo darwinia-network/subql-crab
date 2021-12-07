@@ -95,10 +95,10 @@ network:
       last_confirmed_nonce: MessageNonce
     InboundRelayer: AccountId
     InitializationData:
-      authority_list: AuthorityList
       header: Header
-      is_halted: bool
-      set_id: SetId
+      authorityList: AuthorityList
+      setId: SetId
+      isHalted: bool
     LaneId: Id
     LogEntry: '{}'
     LookupSource: MultiAddress
@@ -465,6 +465,11 @@ network:
               lockFor: LockFor
               reasons: Reasons
             EcdsaMessage: H256
+            InitializationData:
+              authorityList: AuthorityList
+              header: Header
+              isHalted: bool
+              setId: SetId
             MmrRootToSign:
               mmrRoot: Hash
               signatures: Vec<(EthereumAddress, EcdsaSignature)>
@@ -510,6 +515,11 @@ network:
                 lockFor: LockFor
                 reasons: Reasons
               EcdsaMessage: H256
+              InitializationData:
+                authorityList: AuthorityList
+                header: Header
+                isHalted: bool
+                setId: SetId
               MmrRootToSign:
                 mmrRoot: Hash
                 signatures: Vec<(EthereumAddress, EcdsaSignature)>
