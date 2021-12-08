@@ -13,7 +13,7 @@ dataSources:
         - handler: handleCall
           kind: substrate/CallHandler
     name: main
-    startBlock: 8118600
+    startBlock: 8000000
 description: ''
 network:
   endpoint: wss://crab-rpc.darwinia.network/
